@@ -1,6 +1,8 @@
 const { Pool } = require("pg");
 const pool = new Pool({
-  connectionString: process.env.DBConfigLink,
+  connectionString: process.env.DBConnLink,
+  host: process.env.Hostname,
+  port: process.env.Port,
   ssl: {
     rejectUnauthorized: false,
   },
