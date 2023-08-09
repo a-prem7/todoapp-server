@@ -1,10 +1,10 @@
-const Pool = require("pg").Pool;
+const Pool = require("'/dbConfig").Pool;
 require("dotenv").config();
 
 const pool = new Pool({
   user: process.env.USERNAME,
   password: process.env.PASSWORD,
-  host: process.env.HOST,
+  connectionString: process.env.DBConfigLink,
   port: process.env.DBPORT,
   database: "todoapp",
 });
