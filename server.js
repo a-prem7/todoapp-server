@@ -1,9 +1,10 @@
+const dotenv = require("dotenv");
+dotenv.config();
 const PORT = process.env.PORT ?? 8000;
 const express = require("express");
 const { v4: uuidv4 } = require("uuid");
 const app = express();
-const dotenv = require("dotenv");
-dotenv.config();
+
 const itemsPool = require("./dbConfig");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
