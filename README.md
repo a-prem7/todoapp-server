@@ -11,9 +11,9 @@ A user-friendly and efficient todo app designed to help individuals manage their
 
 ## Screenshots
 
-![Alt text](../login.png)
+![Alt text](login.png)
 
-![Alt text](../tasks.png)
+![Alt text](tasks.png)
 
 ## Getting Started
 
